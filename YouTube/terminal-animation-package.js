@@ -1,3 +1,5 @@
+// Original Code https://github.com/ines/termynal
+
 'use strict';
 class Termynal {
     /**
