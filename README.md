@@ -15,7 +15,7 @@ Oracle of Code and Creed, I design and shape digital landscapes of work. As the 
 
 ### Important Links
 
-- [Profile]([https://about:blank](https://sacrafex.github.io/Sacrafex/etc/index.html))
+- [Profile](https://sacrafex.github.io/Sacrafex/etc/index.html)
 
 > _"Code is just another language. I use it to speak truth."_  
 > — Killian Zabinsky
