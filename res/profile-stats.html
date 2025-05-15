@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<title>Sacrafex GitHub Stats Basic</title>
+<style>
+  body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: #1e1e2f;
+    color: #ddd;
+    margin: 0; padding: 1rem;
+    width: 350px;
+    height: 160px;
+    box-sizing: border-box;
+  }
+  h2 {
+    margin: 0 0 0.5rem 0;
+    font-weight: 700;
+    color: #9b59b6;
+  }
+  .stat {
+    font-size: 1.1rem;
+    margin-bottom: 0.4rem;
+  }
+  a {
+    color: #bb86fc;
+    text-decoration: none;
+    font-weight: 600;
+  }
+  a:hover {
+    text-decoration: underline;
+  }
+</style>
+</head>
+<body>
+  <h2>Sacrafex GitHub Stats</h2>
+  <div id="stats">Loading...</div>
+
+  <script>
+    async function fetchStats() {
+      const username = 'Sacrafex';
+      const api = `https://api.github.com/users/${username}`;
+      try {
+        const res = await fetch(api);
+        if (!res.ok) throw new Error('Error fetching API');
+        const data = await res.json();
+        document.getElementById('stats').innerHTML = `
+          <div class="stat"><strong>Repositories:</strong> ${data.public_repos}</div>
+          <div class="stat"><strong>Followers:</strong> ${data.followers}</div>
+          <div class="stat"><strong>Following:</strong> ${data.following}</div>
+          <div class="stat"><a href="${data.html_url}" target="_blank">View Profile</a></div>
+        `;
+      } catch(e) {
+        document.getElementById('stats').textContent = 'Failed to load stats.';
+      }
+    }
+    fetchStats();
+  </script>
+</body>
+</html>
