@@ -3,9 +3,7 @@
     <head>
         <title>termynal.js example</title>
         <meta charset="utf-8">
-        <!-- include the termynal stylesheet -->
-        <link rel="stylesheet" href="termynal.css">
-        <!-- some custom styles for the page -->
+        <link rel="stylesheet" href="https://sacrafex.github.io/Sacrafex/YouTube/terminal-animator.css">
         <link href="https://fonts.googleapis.com/css?family=Fira+Mono">
         <style>
             body {
@@ -21,7 +19,6 @@
         </style>
     </head>
     <body>
-        <!-- the termynal container -->
         <div id="termynal" data-termynal>
             <span data-ty="input">pip install spacy</span>
             <span data-ty="progress"></span>
@@ -38,8 +35,6 @@
             <span data-ty="input" data-ty-prompt=">>>">print([(w.text, w.pos_) for w in doc])</span>
             <span data-ty>[('Hello', 'INTJ'), ('world', 'NOUN')]</span>
         </div>
-
-        <!-- include and initialise termynal.js -->
         <script src="https://sacrafex.github.io/Sacrafex/YouTube/terminal-animation-package.js" data-termynal-container="#termynal"></script>
     </body>
 </html>
