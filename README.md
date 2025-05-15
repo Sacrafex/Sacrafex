@@ -12,6 +12,7 @@ Oracle of Code and Creed, I design and shape digital landscapes of work. As the 
 - Python
 - Java
 - PHP
+- React
 
 ### Important Links
 
