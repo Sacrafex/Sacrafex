@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<title>Sacrafex GitHub Top Repos</title>
+<style>
+  body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: #1e1e2f;
+    color: #ddd;
+    margin: 0; padding: 1rem;
+    width: 350px;
+    height: 260px;
+    box-sizing: border-box;
+  }
+  h2 {
+    margin: 0 0 0.8rem 0;
+    font-weight: 700;
+    color: #9b59b6;
+  }
+  ul {
+    padding-left: 1.2rem;
+    margin: 0;
+  }
+  li {
+    margin-bottom: 0.5rem;
+    font-size: 1rem;
+  }
+  a.repo-link {
+    color: #bb86fc;
+    text-decoration: none;
+  }
+  a.repo-link:hover {
+    text-decoration: underline;
+  }
+  .stars {
+    color: #f1c40f;
+    margin-left: 6px;
+    font-weight: 600;
+  }
+</style>
+</head>
+<body>
+  <h2>Top Repos by Stars</h2>
+  <ul id="repo-list">Loading...</ul>
+
+  <script>
+    async function fetchTopRepos() {
+      const username = 'Sacrafex';
+      const api = `https://api.github.com/users/${username}/repos?per_page=100`;
+      try {
+        const res = await fetch(api);
+        if (!res.ok) throw new Error('API error');
+        const repos = await res.json();
+        repos.sort((a,b) => b.stargazers_count - a.stargazers_count);
+        const top5 = repos.slice(0,5);
+        const list = top5.map(repo => 
+          `<li>
+            <a class="repo-link" href="${repo.html_url}" target="_blank">${repo.name}</a>
+            <span class="stars">★ ${repo.stargazers_count}</span>
+          </li>`
+        ).join('');
+        document.getElementById('repo-list').innerHTML = list;
+      } catch(e) {
+        document.getElementById('repo-list').textContent = 'Failed to load repos.';
+      }
+    }
+    fetchTopRepos();
+  </script>
+</body>
+</html>
