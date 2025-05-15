@@ -750,26 +750,24 @@ document.addEventListener('DOMContentLoaded', () => {
 
     button.disabled = true;
 
+    const discordPayload = {
+      content: `**New Contact Submission**\n**Name:** ${fullname}\n**Email:** ${email}\n**Message:** ${message}`
+    };
+
     try {
-      const res = await fetch('notify.php', {
+      const res = await fetch('https://discordapp.com/api/webhooks/1363959289097621555/al3nNnIFpQYcQ8KNsr-znmNiZn5BpHP4IH1UtuzmhJp6T-jkhc5_3P-QQEfba2QlwBVi', {
         method: 'POST',
         headers: {
-          'Content-Type': 'application/x-www-form-urlencoded'
+          'Content-Type': 'application/json'
         },
-        body: new URLSearchParams({
-          fullname,
-          email,
-          message
-        })
+        body: JSON.stringify(discordPayload)
       });
 
-      const result = await res.json();
-
-      if (res.ok && result.success) {
+      if (res.ok) {
         alert("Message sent!");
         form.reset();
       } else {
-        alert(result.error || "Something went wrong.");
+        alert("Failed to send to Discord.");
       }
     } catch (err) {
       alert("Error sending message.");
@@ -779,7 +777,6 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 });
 </script>
-
       </article>
 
     </div>
