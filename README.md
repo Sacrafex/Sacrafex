@@ -13,6 +13,8 @@ Oracle of Code and Creed and Architect of Digital Domains, I bring structure to 
 - Java
 - PHP
 - React
+- ElectronJS
+- NPM
 
 ### Important Links
 
