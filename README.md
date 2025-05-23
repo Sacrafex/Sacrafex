@@ -15,6 +15,7 @@ Oracle of Code and Creed and Architect of Digital Domains, I bring structure to 
 - React
 - ElectronJS
 - NPM
+- Node.js
 
 ### Important Links
 
