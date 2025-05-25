@@ -16,6 +16,7 @@ Oracle of Code and Creed and Architect of Digital Domains, I bring structure to 
 - ElectronJS
 - NPM
 - Node.js
+- Flutter
 
 ### Important Links
 
