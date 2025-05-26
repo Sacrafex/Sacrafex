@@ -1,5 +1,5 @@
 # Sacrafex
-![Uptime](https://raw.githubusercontent.com/Sacrafex/Sacrafex/main/uptime.svg)
+<img src="https://raw.githubusercontent.com/Sacrafex/Sacrafex/main/uptime.svg?nocache=<?php echo time(); ?>" alt="Uptime">
 ### Also known by KJZ or Killian Zabinsky
 
 ### About Me
