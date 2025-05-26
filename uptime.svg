@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="300" height="20">
+  <linearGradient id="grad" x1="0" y1="0" x2="1" y2="0">
+    <stop offset="0%" stop-color="#8e2de2"/>
+    <stop offset="100%" stop-color="#4a00e0"/>
+  </linearGradient>
+  <rect rx="3" width="300" height="20" fill="url(#grad)"/>
+  <text x="150" y="14" fill="#fff" text-anchor="middle" font-family="monospace" font-size="12">
+    Born March 1st 2010 — 15y 2m 29d alive
+  </text>
+</svg>
