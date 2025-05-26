@@ -726,56 +726,26 @@
         <script>
 document.addEventListener('DOMContentLoaded', () => {
   const form = document.querySelector('[data-form]');
-  const inputs = document.querySelectorAll('[data-form-input]');
-  const submitBtn = document.querySelector('[data-form-btn]');
-  const localStorageKey = 'lastSubmitTime';
-  const cooldown = 60 * 1000; // 60 seconds cooldown
-
-  function validateInputs() {
-    let allFilled = true;
-    inputs.forEach(input => {
-      if (!input.value.trim()) allFilled = false;
-    });
-    submitBtn.disabled = !allFilled;
-  }
-
-  function isOnCooldown() {
-    const lastTime = localStorage.getItem(localStorageKey);
-    if (!lastTime) return false;
-    const elapsed = Date.now() - parseInt(lastTime, 10);
-    return elapsed < cooldown;
-  }
-
-  inputs.forEach(input => {
-    input.addEventListener('input', validateInputs);
-  });
+  const submitBtn = form.querySelector('[data-form-btn]');
 
   form.addEventListener('submit', async e => {
     e.preventDefault();
 
-    if (isOnCooldown()) {
-      alert('Please wait before sending another message.');
-      return;
-    }
-
-    const fullname = form.fullname.value.trim();
-    const email = form.email.value.trim();
-    const message = form.message.value.trim();
-
     submitBtn.disabled = true;
 
+    const fullname = form.querySelector('[name="fullname"]').value.trim();
+    const email = form.querySelector('[name="email"]').value.trim();
+    const message = form.querySelector('[name="message"]').value.trim();
+
     const payload = {
-      content:
-        `**New Contact Submission**\n` +
-        `**Name:** ${fullname}\n` +
-        `**Email:** ${email}\n` +
-        `**Message:** ${message}`
+      fullname,
+      email,
+      message,
+      r: 'contact'
     };
 
     try {
-      // Linux user laughs profusely
-      // Get past that webhook spammer
-      const res = await fetch('https://kjzcorporation.com/firewall', {
+      const res = await fetch('https://kjzcorporation.com/firewall/default.php', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(payload)
@@ -784,18 +754,15 @@ document.addEventListener('DOMContentLoaded', () => {
       if (res.ok) {
         alert('Message sent!');
         form.reset();
-        localStorage.setItem(localStorageKey, Date.now().toString());
       } else {
         alert('Failed to send to Discord.');
       }
     } catch {
       alert('Error sending message.');
     } finally {
-      validateInputs();
+      submitBtn.disabled = false;
     }
   });
-
-  validateInputs();
 });
 </script>
       </article>
