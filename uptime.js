@@ -13,7 +13,7 @@ const years = Math.floor(uptimeDuration.asYears());
 const months = uptimeDuration.months();
 const days = uptimeDuration.days();
 
-const uptime = `Born March 1st 2010 — ${years}y ${months}m ${days}d alive`;
+const uptime = `${years}y ${months}m ${days}d`;
 
 const svg = `
 <svg xmlns="http://www.w3.org/2000/svg" width="300" height="20">
@@ -23,7 +23,7 @@ const svg = `
   </linearGradient>
   <rect rx="3" width="300" height="20" fill="url(#grad)"/>
   <text x="150" y="14" fill="#fff" text-anchor="middle" font-family="monospace" font-size="12">
-    ${uptime}
+    Uptime $> ${uptime}
   </text>
 </svg>
 `;
