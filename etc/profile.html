@@ -726,22 +726,28 @@
         <script>
 document.addEventListener('DOMContentLoaded', () => {
   const form = document.querySelector('[data-form]');
-  const submitBtn = form.querySelector('[data-form-btn]');
+  const submitBtn = document.querySelector('[data-form-btn]');
 
   form.addEventListener('submit', async e => {
     e.preventDefault();
 
+    const fullname = form.fullname.value.trim();
+    const email = form.email.value.trim();
+    const message = form.message.value.trim();
+
+    if (!fullname || !email || !message) {
+      alert('Please fill in all fields.');
+      return;
+    }
+
     submitBtn.disabled = true;
 
-    const fullname = form.querySelector('[name="fullname"]').value.trim();
-    const email = form.querySelector('[name="email"]').value.trim();
-    const message = form.querySelector('[name="message"]').value.trim();
-
     const payload = {
-      fullname,
-      email,
-      message,
-      r: 'contact'
+      content:
+        `**New Contact Submission**\n` +
+        `Name: ${fullname}\n` +
+        `Email: ${email}\n` +
+        `Message: ${message}`
     };
 
     try {
@@ -755,7 +761,7 @@ document.addEventListener('DOMContentLoaded', () => {
         alert('Message sent!');
         form.reset();
       } else {
-        alert('Failed to send to Discord.');
+        alert('Failed to send message.');
       }
     } catch {
       alert('Error sending message.');
