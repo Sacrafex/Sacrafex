@@ -72,5 +72,5 @@ Oracle of Code and Creed and Architect of Digital Domains, I bring structure to 
 - [Profile](https://sacrafex.github.io/Sacrafex/etc/profile.html)
 - [Statement of Belief](https://sacrafex.github.io/Sacrafex/etc/statement-of-belief.html)
 
-> _"Code is just another language. I use it to speak truth."_  
+> _"Truth and meaning aren’t found in the output — it’s hidden in the silence between the keystrokes."_  
 > — Killian Zabinsky
