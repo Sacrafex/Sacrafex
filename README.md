@@ -7,16 +7,116 @@ Oracle of Code and Creed and Architect of Digital Domains, I bring structure to 
 
 ### Languages Known
 
-- Web Technologies (HTML, CSS, JavaScript)
-- OS Operations (Bash, Batch)
-- Python
-- Java
-- PHP
-- React
-- ElectronJS
-- NPM
-- Node.js
-- Flutter
+<table>
+  <tr>
+    <td><b>HTML</b></td>
+    <td>
+      <div style="background:#ddd;border-radius:10px;width:200px;height:16px;">
+        <div style="background:#e34c26;width:95%;height:100%;border-radius:0 10px 10px 0;"></div>
+      </div>
+    </td>
+    <td>95%</td>
+  </tr>
+  <tr>
+    <td><b>CSS</b></td>
+    <td>
+      <div style="background:#ddd;border-radius:10px;width:200px;height:16px;">
+        <div style="background:#264de4;width:90%;height:100%;border-radius:0 10px 10px 0;"></div>
+      </div>
+    </td>
+    <td>90%</td>
+  </tr>
+  <tr>
+    <td><b>JavaScript</b></td>
+    <td>
+      <div style="background:#ddd;border-radius:10px;width:200px;height:16px;">
+        <div style="background:#f0db4f;width:85%;height:100%;border-radius:0 10px 10px 0;"></div>
+      </div>
+    </td>
+    <td>85%</td>
+  </tr>
+  <tr>
+    <td><b>Bash</b></td>
+    <td>
+      <div style="background:#ddd;border-radius:10px;width:200px;height:16px;">
+        <div style="background:#333;width:75%;height:100%;border-radius:0 10px 10px 0;"></div>
+      </div>
+    </td>
+    <td>75%</td>
+  </tr>
+  <tr>
+    <td><b>Python</b></td>
+    <td>
+      <div style="background:#ddd;border-radius:10px;width:200px;height:16px;">
+        <div style="background:#306998;width:80%;height:100%;border-radius:0 10px 10px 0;"></div>
+      </div>
+    </td>
+    <td>80%</td>
+  </tr>
+  <tr>
+    <td><b>Java</b></td>
+    <td>
+      <div style="background:#ddd;border-radius:10px;width:200px;height:16px;">
+        <div style="background:#b07219;width:70%;height:100%;border-radius:0 10px 10px 0;"></div>
+      </div>
+    </td>
+    <td>70%</td>
+  </tr>
+  <tr>
+    <td><b>PHP</b></td>
+    <td>
+      <div style="background:#ddd;border-radius:10px;width:200px;height:16px;">
+        <div style="background:#777bb4;width:60%;height:100%;border-radius:0 10px 10px 0;"></div>
+      </div>
+    </td>
+    <td>60%</td>
+  </tr>
+  <tr>
+    <td><b>React</b></td>
+    <td>
+      <div style="background:#ddd;border-radius:10px;width:200px;height:16px;">
+        <div style="background:#61dafb;width:85%;height:100%;border-radius:0 10px 10px 0;"></div>
+      </div>
+    </td>
+    <td>85%</td>
+  </tr>
+  <tr>
+    <td><b>ElectronJS</b></td>
+    <td>
+      <div style="background:#ddd;border-radius:10px;width:200px;height:16px;">
+        <div style="background:#47848f;width:70%;height:100%;border-radius:0 10px 10px 0;"></div>
+      </div>
+    </td>
+    <td>70%</td>
+  </tr>
+  <tr>
+    <td><b>NPM</b></td>
+    <td>
+      <div style="background:#ddd;border-radius:10px;width:200px;height:16px;">
+        <div style="background:#cb3837;width:80%;height:100%;border-radius:0 10px 10px 0;"></div>
+      </div>
+    </td>
+    <td>80%</td>
+  </tr>
+  <tr>
+    <td><b>Node.js</b></td>
+    <td>
+      <div style="background:#ddd;border-radius:10px;width:200px;height:16px;">
+        <div style="background:#3c873a;width:85%;height:100%;border-radius:0 10px 10px 0;"></div>
+      </div>
+    </td>
+    <td>85%</td>
+  </tr>
+  <tr>
+    <td><b>Flutter</b></td>
+    <td>
+      <div style="background:#ddd;border-radius:10px;width:200px;height:16px;">
+        <div style="background:#02569B;width:60%;height:100%;border-radius:0 10px 10px 0;"></div>
+      </div>
+    </td>
+    <td>60%</td>
+  </tr>
+</table>
 
 ### Important Links
 
