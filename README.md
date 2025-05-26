@@ -4,7 +4,7 @@
 
 ### About Me
 
-Oracle of Code and Creed and Architect of Digital Domains, I bring structure to the chaos of code, constantly crafting systems that function efficiently. I serve as the Overseer of Systemic Operations, ensuring everything runs with efficiency and purpose. With a sharp focus as an Implementation Specialist, I bring visions to life — and when necessary, I am a Defenestration QA (Don't ask what this is supposed to mean).
+Oracle of Code and Creed and Architect of Digital Domains, I bring structure to the chaos of code, constantly crafting systems that function efficiently. I serve as the Overseer of Systemic Operations, ensuring everything runs with efficiency and purpose. With a sharp focus as an Implementation Specialist, I bring visions to life — and when necessary, I am a Defenestration QA.
 
 ### Languages Known
 
