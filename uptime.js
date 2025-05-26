@@ -1,13 +1,17 @@
 const fs = require("fs");
 const dayjs = require("dayjs");
+const duration = require("dayjs/plugin/duration");
+
+dayjs.extend(duration);
 
 const birthdate = dayjs("2010-03-01T00:00:00Z");
 const now = dayjs();
-const duration = dayjs.duration(now.diff(birthdate));
+const diff = now.diff(birthdate);
+const uptimeDuration = dayjs.duration(diff);
 
-const years = duration.years();
-const months = duration.months();
-const days = duration.days();
+const years = Math.floor(uptimeDuration.asYears());
+const months = uptimeDuration.months();
+const days = uptimeDuration.days();
 
 const uptime = `Born March 1st 2010 — ${years}y ${months}m ${days}d alive`;
 
