@@ -1,0 +1,27 @@
+const fs = require("fs");
+const dayjs = require("dayjs");
+
+const birthdate = dayjs("2010-03-01T00:00:00Z");
+const now = dayjs();
+const duration = dayjs.duration(now.diff(birthdate));
+
+const years = duration.years();
+const months = duration.months();
+const days = duration.days();
+
+const uptime = `Born March 1st 2010 — ${years}y ${months}m ${days}d alive`;
+
+const svg = `
+<svg xmlns="http://www.w3.org/2000/svg" width="300" height="20">
+  <linearGradient id="grad" x1="0" y1="0" x2="1" y2="0">
+    <stop offset="0%" stop-color="#8e2de2"/>
+    <stop offset="100%" stop-color="#4a00e0"/>
+  </linearGradient>
+  <rect rx="3" width="300" height="20" fill="url(#grad)"/>
+  <text x="150" y="14" fill="#fff" text-anchor="middle" font-family="monospace" font-size="12">
+    ${uptime}
+  </text>
+</svg>
+`;
+
+fs.writeFileSync("uptime.svg", svg.trim());
