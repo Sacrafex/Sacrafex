@@ -1,5 +1,5 @@
 # Sacrafex
-![Uptime](https://raw.githubusercontent.com/your-username/your-repo/main/uptime.svg)
+![Uptime](https://raw.githubusercontent.com/Sacrafex/Sacrafex/main/uptime.svg)
 ### Also known by KJZ or Killian Zabinsky
 
 ### About Me
