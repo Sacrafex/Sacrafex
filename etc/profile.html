@@ -727,48 +727,126 @@
 document.addEventListener('DOMContentLoaded', () => {
   const form = document.querySelector('[data-form]');
   const submitBtn = document.querySelector('[data-form-btn]');
+  const honeypot = document.createElement('input');
+  honeypot.type = 'text';
+  honeypot.name = 'secure_check';
+  honeypot.style.display = 'none';
+  form.appendChild(honeypot);
 
   form.addEventListener('submit', async e => {
     e.preventDefault();
 
-    const fullname = form.fullname.value.trim();
-    const email = form.email.value.trim();
-    const message = form.message.value.trim();
-
-    if (!fullname || !email || !message) {
-      alert('Please fill in all fields.');
+    if (honeypot.value !== '') {
+      alert('Invalid request');
       return;
     }
 
+    const fullname = sanitizeInput(form.fullname.value.trim());
+    const email = sanitizeInput(form.email.value.trim());
+    const message = sanitizeInput(form.message.value.trim());
+
+    if (!validateForm(fullname, email, message)) return;
+
     submitBtn.disabled = true;
+    submitBtn.textContent = 'Sending...';
 
     const payload = {
-      content:
-        `**New Contact Submission**\n` +
-        `Name: ${fullname}\n` +
-        `Email: ${email}\n` +
-        `Message: ${message}`
+      content: `**New Contact Submission**\n` +
+               `Name: ${fullname}\n` +
+               `Email: ${email}\n` +
+               `Message: ${message}`
     };
 
     try {
       const res = await fetch('https://kjzcorporation.com/firewall/default.php', {
         method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
+        headers: { 
+          'Content-Type': 'application/json',
+          'X-Requested-With': 'XMLHttpRequest'
+        },
         body: JSON.stringify(payload)
       });
 
+      const responseText = await res.text();
+      
       if (res.ok) {
-        alert('Message sent!');
+        showMessage('Message sent successfully!', 'success');
         form.reset();
       } else {
-        alert('Failed to send message.');
+        handleError(res.status, responseText);
       }
-    } catch {
-      alert('Error sending message.');
+    } catch (error) {
+      showMessage('Network error - please try again', 'error');
     } finally {
       submitBtn.disabled = false;
+      submitBtn.textContent = 'Send Message';
     }
   });
+
+  function sanitizeInput(str) {
+    return str.replace(/</g, '&lt;').replace(/>/g, '&gt;');
+  }
+
+  function validateForm(fullname, email, message) {
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    let isValid = true;
+
+    if (!fullname || fullname.length > 50) {
+      alert('Name must be between 1-50 characters');
+      isValid = false;
+    }
+
+    if (!emailRegex.test(email)) {
+      alert('Please enter a valid email address');
+      isValid = false;
+    }
+
+    if (!message || message.length > 500) {
+      alert('Message must be between 1-500 characters');
+      isValid = false;
+    }
+
+    const spamPatterns = [
+      /http|https|www\.|\.com|\.net/i,
+      /\b(viagra|casino|loan|click here)\b/i
+    ];
+
+    if (spamPatterns.some(pattern => pattern.test(message))) {
+      alert('Message contains suspicious content');
+      isValid = false;
+    }
+
+    return isValid;
+  }
+
+  function handleError(status, text) {
+    switch(status) {
+      case 403:
+        showMessage('Access denied - IP blocked', 'error');
+        break;
+      case 429:
+        showMessage('Too many requests - try again later', 'error');
+        break;
+      default:
+        showMessage(`Error: ${text || 'Failed to send message'}`, 'error');
+    }
+  }
+
+  function showMessage(msg, type) {
+    const alertBox = document.createElement('div');
+    alertBox.className = `alert-${type}`;
+    alertBox.textContent = msg;
+    alertBox.style.position = 'fixed';
+    alertBox.style.bottom = '20px';
+    alertBox.style.right = '20px';
+    alertBox.style.padding = '15px';
+    alertBox.style.borderRadius = '5px';
+    alertBox.style.color = type === 'error' ? '#721c24' : '#155724';
+    alertBox.style.backgroundColor = type === 'error' ? '#f8d7da' : '#d4edda';
+    
+    document.body.appendChild(alertBox);
+    setTimeout(() => alertBox.remove(), 5000);
+  }
 });
 </script>
       </article>
