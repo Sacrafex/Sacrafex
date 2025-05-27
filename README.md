@@ -22,8 +22,8 @@ Oracle of Code and Creed and Architect of Digital Domains, I bring structure to 
     <td>95%</td> 
     <td>95%</td> 
     <td><b>Node.js</b></td> 
-    <td>85%</td> 
-    <td>85%</td> 
+    <td>75%</td> 
+    <td>75%</td> 
   </tr> 
   <tr> 
     <td><b>CSS</b></td> 
@@ -43,24 +43,24 @@ Oracle of Code and Creed and Architect of Digital Domains, I bring structure to 
   </tr> 
   <tr> 
     <td><b>React</b></td> 
-    <td>45%</td> 
+    <td>65%</td> 
     <td>45%</td> 
     <td><b>Java</b></td> 
-    <td>50%</td> 
-    <td>50%</td> 
+    <td>40%</td> 
+    <td>60%</td> 
   </tr> 
   <tr> 
     <td><b>ElectronJS</b></td> 
-    <td>60%</td> 
-    <td>60%</td> 
+    <td>65%</td> 
+    <td>65%</td> 
     <td><b>Bash</b></td> 
-    <td>85%</td> 
+    <td>75%</td> 
     <td>85%</td> 
   </tr> 
   <tr> 
     <td><b>Flutter</b></td> 
     <td>60%</td> 
-    <td>60%</td> 
+    <td>45%</td> 
     <td><b>NPM</b></td> 
     <td>90%</td> 
     <td>90%</td> 
