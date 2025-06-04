@@ -4,7 +4,7 @@ Aliases: KJ, KJZ, Killian Zabinsky
 
 ### About Me
 
-**Sacrafex (Killian Zabinsky)** — the Oracle of Code and Creed and Architect of Digital Domains bringing structure to the chaos of code, constantly crafting systems that run with precision. As the Overseer of Systemic Operations, I ensure every function is purposeful and efficient. With a sharp focus as an Implementation Specialist, I transforms vision into reality, and when duty calls, steps in as a fearless Defenestration QA. Beyond code, I am a part-time **organist**, a **lover of off-roading**, and **mechanics**.  I love vehicles especially the ones Jeep or Defender lineup. My favorite vehicle is the legendary **Jeep Wrangler Rubicon JLU 4x4**, a machine that reflects both rugged precision and a all-in-one vehicle.
+**Sacrafex (Killian Zabinsky)** — The Oracle of Code and Creed and Architect of Digital Domains bringing structure to the chaos of code, constantly crafting systems that run with precision. As the Overseer of Systemic Operations, I ensure every function is purposeful and efficient. With a sharp focus, I transforms vision into reality, and when duty calls, steps in as a Defenestration QA. Beyond code, I am a part-time **organist**, a **lover of off-roading**, and **mechanics**.  I love vehicles especially the ones Jeep or Defender lineup. My favorite vehicle is the legendary **Jeep Wrangler Rubicon JLU 4x4**, a machine that reflects both rugged precision and a all-in-one vehicle.
 
 ### Languages Known
 
