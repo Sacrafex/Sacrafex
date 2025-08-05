@@ -51,8 +51,8 @@ Aliases: KJ, KJZ, Killian Zabinsky
   </tr> 
   <tr> 
     <td><b>ElectronJS</b></td> 
-    <td>65%</td> 
-    <td>65%</td> 
+    <td>75%</td> 
+    <td>70%</td> 
     <td><b>Bash</b></td> 
     <td>75%</td> 
     <td>85%</td> 
