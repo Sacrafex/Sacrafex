@@ -69,8 +69,7 @@ Aliases: KJ, KJZ, Killian Zabinsky
 
 ### Important Links
 
-- [Profile](https://sacrafex.github.io/Sacrafex/etc/profile.html)
-- [Statement of Belief](https://sacrafex.github.io/Sacrafex/etc/statement-of-belief.html)
+- [Website](https://killianzabinsky.com)
 
 > _"Truth and meaning aren’t found in the output — it’s hidden in the silence between the keystrokes."_  
 > — Killian Zabinsky
