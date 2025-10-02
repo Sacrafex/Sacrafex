@@ -61,7 +61,7 @@ Aliases: KJ, KJZ, Killian Zabinsky
     <td><b>Flutter</b></td> 
     <td>60%</td> 
     <td>45%</td> 
-    <td><b>C (New)</b></td> 
+    <td><b>C</b></td> 
     <td>20%</td> 
     <td>5%</td> 
   </tr> 
