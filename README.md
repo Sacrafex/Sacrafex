@@ -27,7 +27,7 @@ Aliases: KJ, KJZ, Killian Zabinsky
   </tr> 
   <tr> 
     <td><b>CSS</b></td> 
-    <td>96%</td> 
+    <td>95%</td> 
     <td>95%</td> 
     <td><b>Python</b></td> 
     <td>70%</td> 
@@ -35,7 +35,7 @@ Aliases: KJ, KJZ, Killian Zabinsky
   </tr> 
   <tr> 
     <td><b>JavaScript</b></td> 
-    <td>96%</td> 
+    <td>95%</td> 
     <td>95%</td> 
     <td><b>PHP</b></td> 
     <td>75%</td> 
