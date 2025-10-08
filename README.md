@@ -71,5 +71,5 @@ Aliases: KJ, KJZ, Killian Zabinsky
 
 - [Website](https://killianzabinsky.com)
 
-> _"Truth and meaning aren’t found in the output — it’s hidden in the silence between the keystrokes."_  
+> _"I don't always test my code, but when I do, I do it in production…"_  
 > — Killian Zabinsky
