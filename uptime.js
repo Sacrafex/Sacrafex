@@ -23,7 +23,7 @@ const svg = `
   </linearGradient>
   <rect rx="3" width="300" height="20" fill="url(#grad)"/>
   <text x="150" y="14" fill="#fff" text-anchor="middle" font-family="monospace" font-size="12">
-    kj@kjzos $ Uptime ${uptime}
+    killian@SacrOS $ Uptime ${uptime}
   </text>
 </svg>
 `;
