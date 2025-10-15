@@ -5,6 +5,6 @@
   </linearGradient>
   <rect rx="3" width="300" height="20" fill="url(#grad)"/>
   <text x="150" y="14" fill="#fff" text-anchor="middle" font-family="monospace" font-size="12">
-    killian@SacrOS $ Uptime 15y 7m 19d
+    killian@SacrOS $ Uptime 15y 7m 20d
   </text>
 </svg>
