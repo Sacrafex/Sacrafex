@@ -63,7 +63,7 @@ Aliases: KJ, KJZ, Killian Zabinsky
     <td>45%</td> 
     <td><b>C</b></td> 
     <td>25%</td> 
-    <td>10%</td> 
+    <td>15%</td> 
   </tr> 
 </table>
 
