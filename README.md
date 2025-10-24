@@ -71,5 +71,5 @@ Aliases: KJ, KJZ, Killian Zabinsky
 
 - [Website](https://killianzabinsky.com)
 
-> _"I don't always test my code, but when I do, I do it in production…"_  
+> _"True genius lies not in building complexity, but in mastering simplicity."_  
 > — Killian Zabinsky
