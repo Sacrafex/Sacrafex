@@ -4,7 +4,7 @@ Aliases: KJ, KJZ, Killian Zabinsky
 
 ### About Me
 
-**Sacrafex (Killian Zabinsky)** — The Oracle of Code and Creed bringing structure to the chaos of code, constantly creating open-source systsems. Beyond code, I am a free-time **organist**, a **lover of off-roading**, and **mechanics**.  I enjoy vehicles especially the Jeep or Defender lineup. My favorite vehicle is the legendary **Jeep Wrangler Rubicon JLU 4x4**. I am the project manager and original author of VorosiumOS, an open-source operating system designed to be free of bloat, infinately customizable, and completely free to use. Along with these projects, I design apps such as IronSend ( A Peer-To-Peer encryption application ) to implement as optional packages for VorosiumOS. TO prevent large companies from redistributing the operating system, it is officially owned by Zabinsky Technologies and is under a custom license.
+**Sacrafex (Killian Zabinsky)** — The Official Unofficial fun guy. I am a free-time **organist**, a **off-roader**, **mechanic**, **technician**, and **professional button-pusher**. I enjoy vehicles especially the Jeep or Defender lineup. My favorite vehicle is the legendary **Jeep Wrangler Rubicon JLU 4x4**. I am the project manager and original author of VorosiumOS, an open-source operating system designed to be free of bloat, infinately customizable, and completely free to use. Along with these projects, I design apps such as IronSend ( A Peer-To-Peer encryption application ) to implement as optional packages for VorosiumOS. TO prevent large companies from redistributing the operating system, it is officially owned by Zabinsky Technologies and is under a custom license.
 
 ### Languages Known
 
@@ -71,5 +71,5 @@ Aliases: KJ, KJZ, Killian Zabinsky
 
 - [Website](https://killianzabinsky.com)
 
-> _"True genius lies not in building complexity, but in mastering simplicity."_  
+> _"Officially Unofficially Fun."_  
 > — Killian Zabinsky
