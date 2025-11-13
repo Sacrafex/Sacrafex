@@ -50,20 +50,20 @@ Aliases: KJ, KJZ, Killian Zabinsky
     <td>60%</td> 
   </tr> 
   <tr> 
-    <td><b>ElectronJS</b></td> 
+    <td><b>Electron</b></td> 
     <td>75%</td> 
     <td>70%</td> 
     <td><b>Bash</b></td> 
     <td>75%</td> 
     <td>85%</td> 
   </tr> 
-  <tr> 
+  <tr>
     <td><b>Flutter</b></td> 
     <td>60%</td> 
     <td>45%</td> 
     <td><b>C</b></td> 
+    <td>35%</td> 
     <td>25%</td> 
-    <td>15%</td> 
   </tr> 
 </table>
 
