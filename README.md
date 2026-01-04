@@ -1,4 +1,4 @@
-# Sacrafex
+# Killian Zabinsky (@Sacrafex)
 <img src="https://raw.githubusercontent.com/Sacrafex/Sacrafex/refs/heads/main/uptime.svg?nocache=<?php echo time(); ?>" alt="Uptime">
 Aliases: KJ, KJZ, Killian Zabinsky
 
@@ -17,6 +17,8 @@ Aliases: KJ, KJZ, Killian Zabinsky
 ### Important Links
 
 - [Website](https://killianzabinsky.com)
+- [YouTube Main](https://www.youtube.com/@sacrafex)
+- [YouTube Fun](https://www.youtube.com/@SacrafexGarage)
 
 > _"Officially Unofficially Fun."_  
 > — Killian Zabinsky
