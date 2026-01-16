@@ -14,7 +14,6 @@ Aliases: KJ, KJZ, Killian Zabinsky
 
 - [Website](https://killianzabinsky.com)
 - [YouTube Main](https://www.youtube.com/@sacrafex)
-- [YouTube Fun](https://www.youtube.com/@SacrafexGarage)
 
 > _"Officially Unofficially Fun."_  
 > — Killian Zabinsky
